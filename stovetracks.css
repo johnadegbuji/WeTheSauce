@@ -1,0 +1,30 @@
+#mylist{ 
+
+        font-size:20px; 
+        width:250px; 
+        padding:5px;
+        -moz-appearance: none;
+        -webkit-appearance: none; 
+
+}
+.element, .outer-container {
+ width: 200px;
+ height: 200px;
+}
+ 
+.outer-container {
+ border: 5px solid purple;
+ position: relative;
+ overflow: hidden;
+}
+ 
+.inner-container {
+ position: absolute;
+ left: 0;
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+ 
+.inner-container::-webkit-scrollbar {
+ display: none;
+}
