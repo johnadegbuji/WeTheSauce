@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stovetracks.css">
+<script>
+function initAudio(){
+	var audio, dir, ext, mylist;
+	dir = "";
+	ext = ".mp3";
+	// Audio Object
+	audio = new Audio();
+	// Event Handling
+	mylist = document.getElementById("mylist");
+	mylist.addEventListener("change", changeTrack);
+	// Functions
+	function changeTrack(event){
+		audio.src = dir+event.target.value+ext;
+	    audio.play();
+	}
+}
+window.addEventListener("load", initAudio);
+</script>
+
+</head>
+<body>
+	<div id="outer-container">
+		<div id="inner-container">
+			<div="element">
+			<select id="mylist" size="10">
+				<option value="Carti_Shawty_In_Love">Shawty In Love</option>
+				<option value="Slim_Jimmi_Brink_Truck">Brink Truck</option>
+			</select>
+			</div>
+		</div>
+	</div>	
+	
+</body>
+</html>
